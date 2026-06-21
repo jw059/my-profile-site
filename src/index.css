@@ -1,0 +1,100 @@
+:root {
+  --bg: #080608;
+  --surface: #120d10;
+  --surface-2: #1c1318;
+  --accent-from: #e8350a;
+  --accent-to: #ff7c2a;
+  --accent: #e8350a;
+  --glow: rgba(232, 53, 10, 0.25);
+  --text: #f0e8e4;
+  --text-muted: #6b5750;
+  --radius: 8px;
+  --player-h: 72px;
+  --grad: linear-gradient(90deg, var(--accent-from), var(--accent-to));
+  --grad-diag: linear-gradient(135deg, #e8350a 0%, #ff7c2a 60%, #ffb347 100%);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  padding-bottom: var(--player-h);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--surface-2);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--accent-from);
+  outline-offset: 2px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+}
